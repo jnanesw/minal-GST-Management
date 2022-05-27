@@ -1,5 +1,5 @@
 
-# As Mentioned in **Features to be implemented**. I created a minimal GST tax management system using python and FASTAPI
+# Created a minimal GST tax management system using python and FASTAPI
 
 # Created three roles Tax Payer,Tax Accountant,Admin
 
