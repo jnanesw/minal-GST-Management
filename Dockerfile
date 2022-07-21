@@ -1,6 +1,6 @@
-FROM python:3.9
+FROM python
+COPY . /app
 WORKDIR /app
-ADD . /app
-COPY . .
-ENTRYPOINT ["python"]
-CMD ["app.Main:app", "--host", "0.0.0.0", "--port", "80" ]
+RUN pip install requirements.txt
+EXPOSE $PORT
+CMD uvicorn --workers=4 --bind 0.0.0.0:$PORT app:app
